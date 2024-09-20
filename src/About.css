@@ -1,0 +1,107 @@
+/* General section styles */
+#about {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  .section-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000000; /* Optional: Give it a nice accent color */
+    font-weight: 500;
+  }
+  
+  /* About card */
+  .about-card {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .about-info h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #000000;
+    font-weight: 600;
+  }
+  
+  .about-info p {
+    font-size: 1.2rem;
+    color: #2f2f2f;
+    margin-bottom: 20px;
+  }
+  
+  /* Skill list */
+  .about-info ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .about-info ul li {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .about-info ul li:hover {
+    background-color: #0057b3df;
+  }
+  
+  /* Button */
+  .about-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-button:hover {
+    background-color: #03b300f0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .about-info h1 {
+      font-size: 1.75rem;
+    }
+  
+    .about-info p {
+      font-size: 1rem;
+    }
+  
+    .about-info ul li {
+      font-size: 0.9rem;
+    }
+  
+    .about-button {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  }

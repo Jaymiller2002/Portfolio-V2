@@ -1,15 +1,179 @@
-html {
-  height: 100%;
-}
-body {
-  height: 100%;
-}
-#root {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-}
 #page-content {
-  flex-grow: 2;
+  height: 100vh;
+}
+
+#root {
+  background-image: url(https://wallpapercat.com/w/full/1/1/f/281803-2048x1365-desktop-hd-colorado-background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app-container {
+  font-family: Arial, sans-serif;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-nav {
+  display: flex;  /* Use Flexbox for horizontal alignment */
+  justify-content: center;  /* Center the nav items horizontally */
+}
+
+.app-nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;  /* Use Flexbox for horizontal list items */
+}
+
+.app-nav ul li {
+  margin-right: 20px;  /* Adds space between each nav item */
+}
+
+.app-nav ul li:last-child {
+  margin-right: 0;  /* Remove margin from the last item */
+}
+
+.nav-button {
+  margin-right: 10px;
+  padding: 10px;
+  background-color: #c66021;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  background-color: #e86615;
+}
+
+.app-section {
+  padding: 20px;
+  background-image: linear-gradient(90deg, #dd5212d9, #c411c4d3);
+}
+
+.app-footer {
+  text-align: center;
+  padding: 20px;
+  background-image: url(https://files.oaiusercontent.com/file-Y65kEnokYhliOyanC2lD0U1T?se=2024-09-19T17%3A13%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D8e2871f2-bc6a-44cd-8404-ac6f91386685.webp&sig=aN1ibWtGYmDbfFtHUSTlyJ1kapbaUa8GLqXNEKzKs7M%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app-footer p {
+  color: black;
+  font-weight: 500;
+  text-align: center;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #ce550e;
+  font-weight: 500;
+}
+
+.feature-card, .project-cards, .contact-card {
+  margin-bottom: 20px;
+}
+
+.project-cards iframe {
+  width: 100%;
+  height: 300px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .app-nav ul {
+    flex-direction: row;
+  }
+
+  .section-content {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 992px) {
+  .app-nav ul {
+    flex-direction: row;
+  }
+
+  .nav-button {
+    padding: 8px;
+  }
+
+  .section-content {
+    max-width: 700px;
+  }
+
+  .project-cards iframe {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-nav ul {
+    flex-direction: column;  /* Stack navigation items vertically */
+  }
+
+  .nav-button {
+    padding: 8px;
+    width: 100%;  /* Full-width buttons for mobile */
+  }
+
+  .app-section {
+    padding: 15px;
+  }
+
+  .section-content {
+    max-width: 600px;
+  }
+
+  .project-cards iframe {
+    height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .app-nav ul li {
+    margin-right: 10px; /* Reduce spacing between items */
+  }
+
+  .nav-button {
+    font-size: 14px;
+    padding: 6px;  /* Smaller button padding */
+  }
+
+  .app-header {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .app-section {
+    padding: 10px;
+  }
+
+  .section-content {
+    max-width: 100%;  /* Full width on smaller devices */
+  }
+
+  .project-cards iframe {
+    height: 150px;
+  }
+
+  .app-footer {
+    font-size: 0.9rem;
+  }
 }

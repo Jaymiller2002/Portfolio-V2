@@ -1,0 +1,146 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    margin: 50px auto;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background-color: #111;
+    color: #32cd32;
+    text-align: right;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 15px;
+    font-size: 14px;
+    background-color: #4a4a4a;
+    border: 1px solid #000;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s;
+  }
+  
+  button:hover {
+    background-color: #666;
+  }
+  
+  button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  button:nth-child(4),
+  button:nth-child(8),
+  button:nth-child(12),
+  button:nth-child(16) {
+    background-color: #ff4500;
+    color: white;
+  }
+  
+  button:nth-child(4):hover,
+  button:nth-child(8):hover,
+  button:nth-child(12):hover,
+  button:nth-child(16):hover {
+    background-color: #ff5733;
+  }
+  
+  button:nth-child(4):active,
+  button:nth-child(8):active,
+  button:nth-child(12):active,
+  button:nth-child(16):active {
+    transform: translateY(3px);
+    background-color: #e05228;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Small screens (e.g., iPhones, Android phones) */
+  @media only screen and (max-width: 600px) {
+    .calculator {
+      width: 170px;  /* Adjust calculator width for small screens */
+      padding: 10px;
+    }
+  
+    input[type="text"] {
+      font-size: 16px;  /* Slightly reduce font size */
+      padding: 10px;
+    }
+  
+    button {
+      padding: 10px;  /* Reduce button size for smaller screens */
+      font-size: 12px;
+    }
+  
+    .buttons {
+      gap: 5px;  /* Reduce gap between buttons */
+    }
+  }
+  
+  /* Medium screens (e.g., tablets, larger phones) */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .calculator {
+      width: 230px;  /* Slightly smaller than desktop */
+      padding: 12px;
+    }
+  
+    input[type="text"] {
+      font-size: 17px;
+      padding: 12px;
+    }
+  
+    button {
+      padding: 12px;
+      font-size: 13px;
+    }
+  
+    .buttons {
+      gap: 8px;
+    }
+  }
+  
+  /* Large screens (e.g., laptops, desktops) */
+  @media only screen and (min-width: 1025px) {
+    .calculator {
+      width: 315px;  /* Larger size for desktop */
+      padding: 20px;
+    }
+  
+    input[type="text"] {
+      font-size: 20px;  /* Larger font for better readability on desktops */
+      padding: 20px;
+    }
+  
+    button {
+      padding: 20px;
+      font-size: 16px;
+    }
+  
+    .buttons {
+      gap: 12px;  /* Larger gap for more space */
+    }
+  }
+  
+  
+  

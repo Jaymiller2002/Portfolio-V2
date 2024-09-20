@@ -1,0 +1,132 @@
+/* General section styles */
+#home {
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+  }
+  
+/* Home Section Styling */
+.app-section {
+  padding: 60px 20px;
+  background-color: #f3f3f3; /* Adjust as needed */
+  text-align: center;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-image {
+  width: 150px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Makes the image circular */
+  margin: 20px 0; /* Add some space around the image */
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+}
+  
+  .section-content p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #000000;
+  }
+  
+  /* Button styles */
+  button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 10px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0057b3e0;
+    transform: scale(1.05);
+  }
+  
+  /* Specific button colors for each action */
+  .btn-increment {
+    background-color: #28a745;
+  }
+  
+  .btn-increment:hover {
+    background-color: #218837e3;
+  }
+  
+  .btn-decrement {
+    background-color: #dc3545;
+  }
+  
+  .btn-decrement:hover {
+    background-color: #c82333e9;
+  }
+  
+  .btn-multiply {
+    background-color: #ffc107;
+    color: #333;
+  }
+  
+  .btn-multiply:hover {
+    background-color: #e0a800ee;
+  }
+  
+  .btn-divide {
+    background-color: #17a2b8;
+  }
+  
+  .btn-divide:hover {
+    background-color: #138496ea;
+  }
+  
+  .btn-generate-word {
+    background-color: #6f42c1;
+  }
+  
+  .btn-generate-word:hover {
+    background-color: #5a32a3e5;
+  }
+  
+  /* Button count and random word text */
+  p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  p span {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+      margin: 8px 5px;
+    }
+  
+    p {
+      font-size: 1.1rem;
+    }
+  }

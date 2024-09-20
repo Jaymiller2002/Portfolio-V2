@@ -1,0 +1,169 @@
+/* General Section Styling */
+.app-section {
+  padding: 60px 20px;
+  background-color: #f3f3f3;
+  text-align: center;
+}
+
+.section-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+/* Contact Card Styling */
+.contact-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.contact-item {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Card Title Styling */
+.contact-item h4 {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+/* Button Styling */
+.contact-card button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-card button:hover {
+  background-color: #ff6200c7;
+  transform: translateY(-3px);
+}
+
+/* Media Queries */
+
+/* Smartphones (max-width: 480px) - Covers most iPhone and Android devices */
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .contact-item h4 {
+    font-size: 1rem;
+  }
+
+  .contact-card button {
+    font-size: 0.9rem;
+    width: 100%;
+    padding: 8px;
+  }
+}
+
+/* Tablets (max-width: 768px) - General for larger phones, small tablets */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .contact-item {
+    padding: 20px;
+  }
+
+  .contact-item h4 {
+    font-size: 1.1rem;
+  }
+}
+
+/* Laptops/Desktops (min-width: 1024px) - Standard desktop/laptop screens */
+@media (min-width: 1024px) {
+  .section-content {
+    max-width: 1200px; /* Expand the container for larger screens */
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-card {
+    grid-template-columns: 1fr 1fr; /* Display 2 columns on larger screens */
+    gap: 30px; /* Increase gap between cards */
+  }
+
+  .contact-item {
+    padding: 25px;
+  }
+
+  .contact-item h4 {
+    font-size: 1.3rem;
+  }
+
+  .contact-card button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Large Desktop Screens (min-width: 1440px) - Larger monitors and 4K screens */
+@media (min-width: 1440px) {
+  .section-content {
+    max-width: 1400px;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .contact-card {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on larger monitors */
+  }
+
+  .contact-item {
+    padding: 30px;
+  }
+
+  .contact-item h4 {
+    font-size: 1.5rem;
+  }
+
+  .contact-card button {
+    padding: 14px 28px;
+    font-size: 1.2rem;
+  }
+}
+
