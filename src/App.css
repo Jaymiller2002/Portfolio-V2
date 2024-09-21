@@ -16,26 +16,38 @@
 .app-header {
   text-align: center;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.app-nav {
-  display: flex;  /* Use Flexbox for horizontal alignment */
-  justify-content: center;  /* Center the nav items horizontally */
+/* Hide the burger icon by default */
+.burger-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* When the menu is open on mobile, display the nav vertically */
+.app-nav.open ul {
+  display: block;
 }
 
 .app-nav ul {
   list-style-type: none;
   padding: 0;
-  display: flex;  /* Use Flexbox for horizontal list items */
+  display: flex; /* Use Flexbox for horizontal alignment */
+  justify-content: center; /* Center the nav items horizontally */
 }
 
 .app-nav ul li {
-  margin-right: 20px;  /* Adds space between each nav item */
+  margin-right: 20px; /* Adds space between each nav item */
 }
 
-.app-nav ul li:last-child {
-  margin-right: 0;  /* Remove margin from the last item */
-}
+/* .app-nav ul li:last-child {
+  margin-right: 0;
+} */
 
 .nav-button {
   margin-right: 10px;
@@ -126,29 +138,61 @@
   }
 }
 
+/* Media Query for screens smaller than 768px */
 @media (max-width: 768px) {
+  /* Hide navigation menu by default and apply mobile-specific styles */
   .app-nav ul {
-    flex-direction: column;  /* Stack navigation items vertically */
+    display: none; /* Hide menu initially */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-end; /* Align buttons to the right */
+    background-color: rgba(255, 255, 255, 0.6); /* White background for the menu */
+    padding: 10px; /* Add padding to the menu for spacing */
+    position: absolute; /* Position menu over the content */
+    top: 50px; /* Adjust based on header height */
+    right: 10px; /* Align to the right of the screen */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
   }
 
+  /* When the menu is open, show the nav items */
+  .app-nav.open ul {
+    display: flex; /* Display menu on burger icon click */
+  }
+
+  /* Burger icon for mobile */
+  .burger-icon {
+    display: block; /* Show burger icon on mobile */
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  /* Mobile nav buttons */
   .nav-button {
-    padding: 8px;
-    width: 100%;  /* Full-width buttons for mobile */
+    padding: 8px 15px; /* Smaller buttons for mobile */
+    margin-bottom: 10px; /* Space between buttons */
+    background-color: rgb(255, 94, 0); /* White button background */
+    color: black; /* Dark text for contrast */
+    border: 1px solid #000000; /* Light border */
+    border-radius: 4px; /* Rounded buttons */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   }
 
+  /* Hover effect on nav buttons */
+  .nav-button:hover {
+    background-color: #e75116ea; /* Light gray on hover */
+    color: #000000; /* Darker text on hover */
+  }
+
+  /* Adjust section content padding */
   .app-section {
-    padding: 15px;
-  }
-
-  .section-content {
-    max-width: 600px;
-  }
-
-  .project-cards iframe {
-    height: 200px;
+    padding: 20px;
   }
 }
 
+/* Media Query for screens smaller than 576px */
 @media (max-width: 576px) {
   .app-nav ul li {
     margin-right: 10px; /* Reduce spacing between items */
@@ -156,7 +200,7 @@
 
   .nav-button {
     font-size: 14px;
-    padding: 6px;  /* Smaller button padding */
+    padding: 6px; /* Smaller button padding */
   }
 
   .app-header {
@@ -169,7 +213,7 @@
   }
 
   .section-content {
-    max-width: 100%;  /* Full width on smaller devices */
+    max-width: 100%; /* Full width on smaller devices */
   }
 
   .project-cards iframe {
