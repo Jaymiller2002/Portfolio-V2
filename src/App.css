@@ -3,13 +3,14 @@
 }
 
 #root {
-  background-image: url(https://wallpapercat.com/w/full/1/1/f/281803-2048x1365-desktop-hd-colorado-background-image.jpg);
+  background-image: url("./assets/Sunsets.webp");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .app-container {
   font-family: Arial, sans-serif;
+  clear: both;
 }
 
 .app-header {
@@ -56,10 +57,12 @@
 
 .app-footer {
   text-align: center;
-  padding: 20px;
-  background-image: url(https://files.oaiusercontent.com/file-Y65kEnokYhliOyanC2lD0U1T?se=2024-09-19T17%3A13%3A49Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D8e2871f2-bc6a-44cd-8404-ac6f91386685.webp&sig=aN1ibWtGYmDbfFtHUSTlyJ1kapbaUa8GLqXNEKzKs7M%3D);
+  padding: 40px;
+  background-image: url("./assets/Sunsets.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 200px; /* Ensure minimum height to avoid clipping */
+  position: relative;
 }
 
 .app-footer p {

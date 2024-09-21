@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import Calculator from './Calculator';
 import './Features.css';
+import Diablo4 from './assets/D4.webp'
+import GTA6 from './assets/GTA6.webp'
+import BO6 from './assets/BO6.jpeg'
+import Battlefield2042 from './assets/Battlefield.jpeg'
 
 const Features = () => {
   // State to manage visibility of the image list
@@ -37,10 +41,10 @@ const Features = () => {
           <div className="image-gallery">
             <h3>Image Gallery</h3>
             <div className="image-list">
-              <img src="https://via.placeholder.com/150" alt="Example 1" />
-              <img src="https://via.placeholder.com/150" alt="Example 2" />
-              <img src="https://via.placeholder.com/150" alt="Example 3" />
-              <img src="https://via.placeholder.com/150" alt="Example 4" />
+              <img src={Diablo4} alt="Diablo 4" />
+              <img src={GTA6} alt="GTA 6" />
+              <img src={BO6} alt="Black Ops 6" />
+              <img src={Battlefield2042} alt="Battlefield 2042" />
               {/* Add more images as needed */}
             </div>
           </div>

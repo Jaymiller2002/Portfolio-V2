@@ -37,7 +37,7 @@ h1 {
 }
 
 .features-button:hover {
-  background-color: #0056b3;
+  background-color: #00b31eea;
   transform: translateY(-3px);
 }
 
@@ -50,7 +50,7 @@ h1 {
 }
 
 .feature-card {
-  background-color: white;
+  background-color: white transparent;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
