@@ -51,19 +51,18 @@
   }
   
   .about-info ul li {
-    background-color: #007bff;
+    background-color: #333;
     color: #fff;
     padding: 8px 15px;
     border-radius: 25px;
     font-size: 1rem;
     font-weight: 500;
     transition: background-color 0.3s ease;
-    cursor: pointer;
   }
   
-  .about-info ul li:hover {
+  /* .about-info ul li:hover {
     background-color: #0057b3df;
-  }
+  } */
   
   /* Button */
   .about-button {

@@ -18,14 +18,14 @@ const Projects = () => {
 
   // Projects data
   const projects = [
-    { title: 'Project 1', src: 'https://jaymiller2002.github.io/Tic-Tac-Toe/' },
-    { title: 'Project 2', src: 'https://music-player-02.vercel.app/' },
-    { title: 'Project 3', src: 'https://password-generator-sepia-zeta.vercel.app/' },
-    { title: 'Project 4', src: 'https://doglist.vercel.app/' },
-    { title: 'Project 5', src: 'https://to-do-list-mauve-gamma-70.vercel.app/' },
-    { title: 'Project 6', src: 'https://jaysportfolio.vercel.app/' },
-    { title: 'Project 7', src: 'https://image-gallery-slider-react.vercel.app/' },
-    { title: 'Project 8', src: 'https://music-player-cyan-six.vercel.app/' },
+    { title: 'Tic-Tac-Toe', src: 'https://jaymiller2002.github.io/Tic-Tac-Toe/' },
+    { title: 'Music Player', src: 'https://music-player-02.vercel.app/' },
+    { title: 'Password Gen.', src: 'https://password-generator-sepia-zeta.vercel.app/' },
+    { title: 'Doglist', src: 'https://doglist.vercel.app/' },
+    { title: 'To Do List', src: 'https://to-do-list-mauve-gamma-70.vercel.app/' },
+    { title: 'Portfolio V1', src: 'https://jaysportfolio.vercel.app/' },
+    { title: 'Image Gallery', src: 'https://image-gallery-slider-react.vercel.app/' },
+    { title: 'Music Player V2', src: 'https://music-player-cyan-six.vercel.app/' },
   ];
 
   // Get either the selected project or all projects
